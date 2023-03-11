@@ -7,7 +7,7 @@ while cap.isOpened():
     ret, frame1 = cap.read()
     ret, frame2 = cap.read()
     
-    if ret None:
+    if not ret:
         continue
         
     diff = cv2.absdiff(frame1, frame2)
